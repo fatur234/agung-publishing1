@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Freelance Writer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="Agung.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Freelance Writer</div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#cv">Curriculum Vitae</a></li>
+          <li><a href="#portfolio">My Portofolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <h1>Professional Freelance Writing Services</h1>
+        <p>Membuat Tulisan Bagus untuk Keperluan Bisnis Anda</p>
+        <a href="#pricing" class="btn">Hire Me</a>
+      </div>
+    </section>
+
+    <section id="about" class="about-section fade-in">
+      <div class="about-container">
+          <div class="about-content">
+              <h2>About Me</h2>
+              <p>Halo! Nama saya Agung Faturahman.
+                Saya adalah lulusan Sastra Indonesia dari Universitas Indonesia dengan IPK 3,9. Sejak masih kuliah, saya telah bekerja sebagai penulis lepas, dan setelah lulus, saya berfokus penuh pada profesi penulisan novel. Selama lima tahun terakhir, saya telah menerbitkan banyak buku, beberapa di antaranya berhasil menjadi best seller internasional, bahkan ada yang diadaptasi menjadi film.
+                
+                Selain menulis novel, saya juga aktif menulis artikel, blog, dan menyediakan layanan copywriting untuk berbagai perusahaan dan brand yang ingin bekerja sama.</p>
+              <a href="#contact" class="btn">Mari Berkenalan</a>
+          </div>
+          <div class="about-image">
+              <img src="Agung.png" alt="Your Name">
+          </div>
+      </div>
+  </section>
+  
+  
+
+    <section id="services" class="services fade-in">
+      <h2>My Services</h2>
+      <div class="service-cards">
+        <div class="service-card">
+          <h3>Blog Writing</h3>
+          <p>Konten blog yang menarik dan ramah SEO untuk situs web Anda</p>
+        </div>
+        <div class="service-card">
+          <h3>Copywriting</h3>
+          <p>Naskah persuasif yang mengubah pembaca menjadi pelanggan</p>
+        </div>
+        <div class="service-card">
+          <h3>Novel Writer</h3>
+          <p>Menulis cerita fiksi yang menarik untuk para pembaca</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="cv" class="cv fade-in">
+      <h2>Curriculum Vitae</h2>
+      <div class="cv-container">
+        <div class="profile-picture">
+          <img src="profil.jpg" alt="Profile Picture" />
+        </div>
+        <div class="cv-content">
+            <h3>Berikut adalah riwayat pendidikan dan pengalaman bekerja saya</h3>
+          <p></p>
+          <ul>
+            <li>Pengalaman bekerja sebagai penulis freelance selama 5 Tahun</li>
+            <li>Sarjana Sastra Indonesia dari Universitas Indonesia dengan IPK 3,9</li>
+            <li>Sudah mempublish banyak artikel dan blog</li>
+            <li>Menulis lebih dari 80 karya sastra seperti cerpen, esai, puisi, hingga novel</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+      <h2>My Skills</h2>
+  
+      <!-- Copywriting Skill -->
+      <div class="skill">
+          <h3>Copywriting</h3>
+          <div class="progress-bar">
+              <div class="progress" style="width: 80%;">80%</div>
+          </div>
+      </div>
+  
+      <!-- SEO Writing Skill -->
+      <div class="skill">
+          <h3>SEO Writing</h3>
+          <div class="progress-bar">
+              <div class="progress" style="width: 75%;">75%</div>
+          </div>
+      </div>
+  
+      <!-- Creative Writing Skill -->
+      <div class="skill">
+          <h3>Creative Writing</h3>
+          <div class="progress-bar">
+              <div class="progress" style="width: 100%;">100%</div>
+          </div>
+      </div>
+  </section>
+
+  <section id="skill-cards" class="skill-cards-section">
+    <h2>My Skills</h2>
+
+    <!-- Kartu Keterampilan 1 -->
+    <div class="skill-card" onclick="showSkillDetail('copywriting')">
+        <img src="keyboard-solid.svg" alt="Copywriting">
+        <h3>Copywriting</h3>
+    </div>
+
+    <!-- Kartu Keterampilan 2 -->
+    <div class="skill-card" onclick="showSkillDetail('seo-writing')">
+        <img src="arrow-trend-up-solid.svg" alt="SEO Writing">
+        <h3>SEO Writing</h3>
+    </div>
+
+    <!-- Kartu Keterampilan 3 -->
+    <div class="skill-card" onclick="showSkillDetail('creative-writing')">
+        <img src="lightbulb-regular.svg" alt="Creative Writing">
+        <h3>Creative Writing</h3>
+    </div>
+</section>
+
+<!-- Popup Detail Skill -->
+<div id="skillDetailPopup" class="popup">
+    <div class="popup-content">
+        <span class="close-btn" onclick="closeSkillDetail()">×</span>
+        <h2 id="skillTitle">Skill Title</h2>
+        <p id="skillDescription">This is a brief description of the skill.</p>
+    </div>
+</div>
+
+  
+    
+    <section id="portfolio" class="portfolio-section">
+      <h2>Portfolio</h2>
+      <p>Berikut beberapa hasil kerja saya selama hidup di atas tinta dan kertas.</p>
+      
+      <div class="portfolio-grid">
+          <div class="portfolio-item">
+              <img src="1.png" alt="Project 1">
+              <div class="portfolio-info">
+                  <h3>Menulis Novel Best Seller Internasional</h3>
+                  <p>Kalian tahu Novel 'Abu di ujung jalan' yang sudah diterjemahkan 40 bahasa? Itu aku yang tulis</p>
+              </div>
+          </div>
+          <div class="portfolio-item">
+              <img src="2.png" alt="Project 2">
+              <div class="portfolio-info">
+                  <h3>Menulis lebih dari 100 Artikel</h3>
+                  <p>Saya menulis artikel yang cukup banyak di beberapa platform yang berbeda dan menghasilkan view hingga jutaan</p>
+              </div>
+          </div>
+          
+          <div class="portfolio-item">
+              <img src="3.png" alt="Project 3">
+              <div class="portfolio-info">
+                  <h3>Copywriting</h3>
+                  <p>Pernah menulis Copywriting untuk suatu brand kecil dan menjadi besar semenjak saya memberikan jasa kepada mereka.</p>
+              </div>
+          </div>
+          <!-- Tambahkan lebih banyak item sesuai kebutuhan -->
+      </div>
+  </section>
+    <section id="portfolio" class="portfolio-section">
+      <h2>Karya-karya</h2>
+      <p>Berikut 6 buku best seller yang pernah saya tulis</p>
+      
+      <div class="portfolio-grid">
+          <div class="portfolio-item">
+              <img src="satu.png" alt="Project 1">
+              <div class="portfolio-info">
+                  <h3>Novel Best Seller Internasional Yang Sudah Diadaptasi Menjadi Film</h3>
+                  <p>Novel-novel ini sudah diadaptasi menjadi film yang benar-benar mirip dengan isi buku tanpa perubahan sedikitpun.</p>
+              </div>
+          </div>
+          <div class="portfolio-item">
+              <img src="dua.png" alt="Project 2">
+              <div class="portfolio-info">
+                  <h3>Novel Best Seller Internasional Yang Sudah Diadaptasi Menjadi Film</h3>
+                  <p>Novel-novel ini sudah diadaptasi menjadi film yang benar-benar mirip dengan isi buku tanpa perubahan sedikitpun.</p>
+              </div>
+          </div>
+          
+          <!-- Tambahkan lebih banyak item sesuai kebutuhan -->
+      </div>
+  </section>
+
+  <section id="testimonials" class="testimonials-section">
+    <h2>Client Testimonials</h2>
+
+    <div class="testimonial-card fade-in">
+        <img src="d030c640-dffc-490d-8694-89b91c474193.jpeg" alt="Client 1" class="client-photo">
+        <h3>Albert Einstein</h3>
+        <p>"Layanan yang luar biasa! Karya Tulis saya tentang 'Teori Relativitas Umum dan Khusus' yang ditulis olehnya membuat saya meraih nobel."</p>
+    </div>
+
+    <div class="testimonial-card fade-in">
+        <img src="2,235 Sukarno Photos & High Res Pictures.jpeg" alt="Client 2" class="client-photo">
+        <h3>Soekarno</h3>
+        <p>"Penulis yang sangat berbakat! Rakyat saya puas dengan proklamasi yang saya bacakan dan Negara saya resmi merdeka."</p>
+    </div>
+
+    <div class="testimonial-card fade-in">
+        <img src="Human Interest.jpeg" alt="Client 3" class="client-photo">
+        <h3>Stephen Hawking</h3>
+        <p>"Dia membuat diri saya yang lumpuh membantu saya menulis buku tentang 'Sejarah Singkat Waktu.' mengaggumkan."</p>
+    </div>
+
+    
+
+
+  <section id="portfolio" class="portfolio-slide">
+    <h2>Informasi Tambahan</h2>
+    <p>Berikut adalah beberapa hal yang mungkin bisa meyakinkan kalian agar ingin bekerja sama dengan saya</p>
+
+    <div class="slideshow-container">
+        <!-- Slide 1 -->
+        <div class="slide fade">
+            <img src="Screenshot (928).png" alt="Work 1">
+            
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="slide fade">
+            <img src="Screenshot (930).png" alt="Work 2">
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="slide fade">
+            <img src="Screenshot (931).png" alt="Work 3">
+        </div>
+
+        <div class="slide fade">
+            <img src="Screenshot (933).png" alt="Work 4">
+        </div>
+
+        <div class="slide fade">
+            <img src="Screenshot (934).png" alt="Work 5">
+        </div>
+
+        <!-- Navigation Buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    
+    <!-- Dot Indicators -->
+    <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+</section>
+
+
+
+
+  <section id="pricing" class="pricing-section">
+    <h2>Harga Jasa Penulisan Artikel</h2>
+    <p>Pilih paket yang sesuai untuk keperluan anda.</p>
+    
+    <div class="pricing-grid">
+        <!-- Paket Dasar -->
+        <div class="pricing-card">
+            <h3>Basic</h3>
+            <p class="price">Rp 1.500.000</p>
+            <ul>
+                <li>Artikel 500 kata</li>
+                <li>Basic SEO Optimization</li>
+                <li>3x Revisi</li>
+            </ul>
+            <a href="#contact" class="btn">Order Now</a>
+        </div>
+
+        <!-- Paket Menengah -->
+        <div class="pricing-card popular">
+            <h3>Standard</h3>
+            <p class="price">Rp 3.000.000</p>
+            <ul>
+                <li>Artikel 1000 Kata</li>
+                <li>Advanced SEO Optimization</li>
+                <li>5x Revisi</li>
+                <li>Keyword Research</li>
+            </ul>
+            <a href="#contact" class="btn">Order Now</a>
+        </div>
+
+        <!-- Paket Premium -->
+        <div class="pricing-card">
+            <h3>Premium</h3>
+            <p class="price">Rp 4.500.000</p>
+            <ul>
+                <li>Artikel 2000 kata</li>
+                <li>Complete SEO Optimization</li>
+                <li>Revisi Sepuasnya</li>
+                <li>Riset Kata Kunci dan Konten</li>
+                <li>Prioritas Mendukung</li>
+            </ul>
+            <a href="#contact" class="btn">Order Now</a>
+        </div>
+    </div>
+</section>
+
+<section id="pricing-copywriting" class="pricing-section">
+  <h2>Harga Jasa Copywriting</h2>
+  <p>Pilih paket yang sesuai untuk keperluan bisnis anda</p>
+  
+  <div class="pricing-grid">
+      <!-- Paket Basic Copywriting -->
+      <div class="pricing-card">
+          <h3>Basic Copywriting</h3>
+          <p class="price">Rp 2.500.000</p>
+          <ul>
+              <li>500 Kata Salinan</li>
+              <li>Analisis Nada Suara Merek</li>
+              <li>2x Revisi</li>
+          </ul>
+          <a href="#" class="btn">Order Now</a>
+      </div>
+
+      <!-- Paket Standard Copywriting -->
+      <div class="pricing-card popular">
+          <h3>Standard Copywriting</h3>
+          <p class="price">Rp 3.500.000</p>
+          <ul>
+              <li>1000 Kata Salinan</li>
+              <li>Analisis Nada Suara Merek dan Review</li>
+              <li>5x Revisi</li>
+              <li>SEO & Keywords Optimization</li>
+          </ul>
+          <a href="#" class="btn">Order Now</a>
+      </div>
+
+      <!-- Paket Premium Copywriting -->
+      <div class="pricing-card">
+          <h3>Premium Copywriting</h3>
+          <p class="price">Rp 5.000.000</p>
+          <ul>
+              <li>2000 Kata Salinan</li>
+              <li>Analisis Merek dan Pesaing yang Mendalam</li>
+              <li>Revisi Sepuasnya</li>
+              <li>SEO, Keywords, and CTA Optimization</li>
+              <li>Konsultasi Pelanggan Untuk Bisnis</li>
+          </ul>
+          <a href="#" class="btn">Order Now</a>
+      </div>
+  </div>
+</section>
+
+<section id="pricing-fiction" class="pricing-section">
+  <h2>Harga Jasa Menulis Karya Fiksi</h2>
+  <p>Pilih Paket Yang Sesuai Agar Ide Karya Fiksi Anda Menjadi Lebih Hidup!</p>
+  
+  <div class="pricing-grid">
+      <!-- Paket Cerita Pendek -->
+      <div class="pricing-card">
+          <h3>Cerita Pendek</h3>
+          <p class="price">Rp 3.000.000</p>
+          <ul>
+              <li>2,000 - 5,000 Kata</li>
+              <li>Perkembangan Karakter dan Plot</li>
+              <li>3x Revisi</li>
+          </ul>
+          <a href="#" class="btn">Order Now</a>
+      </div>
+
+      <!-- Paket Cerita Menengah -->
+      <div class="pricing-card popular">
+          <h3>Novelet</h3>
+          <p class="price">Rp 7.500.000</p>
+          <ul>
+              <li>5,000 - 15,000 Kata</li>
+              <li>Arc Karakter Yang Kompleks</li>
+              <li>5x Revisi</li>
+              <li>Gaya Genre Yang Spesifik</li>
+          </ul>
+          <a href="#" class="btn">Order Now</a>
+      </div>
+
+      <!-- Paket Novel -->
+      <div class="pricing-card">
+          <h3>Novel</h3>
+          <p class="price">Rp 15.000.000</p>
+          <ul>
+              <li>50,000+ Kata</li>
+              <li>Pembangunan Dunia yang Dalam</li>
+              <li>Revisi Sepuasnya</li>
+              <li>Bebas menentukan plot dan tema</li>
+              <li>Termasuk Editing yang Profesional</li>
+          </ul>
+          <a href="#" class="btn">Order Now</a>
+      </div>
+  </div>
+</section>
+
+<!-- Popup Diskon -->
+<div id="promoPopup" class="popup">
+  <div class="popup-content">
+      <span class="close-btn" onclick="closePopup()">×</span>
+      <h2>Special Offer!</h2>
+      <p>Get 20% off on your first project!</p>
+      <button onclick="window.location.href='#contact'">Claim Now</button>
+  </div>
+</div>
+
+
+
+<section id="faq-section" class="faq-section">
+  <h2>Frequently Asked Questions</h2>
+
+  <!-- Pertanyaan 1 -->
+  <div class="faq-item">
+      <div class="faq-question" onclick="toggleFAQ(this)">
+          <h3>Loh kok mahal amat bang?</h3>
+          <span class="toggle-icon">+</span>
+      </div>
+      <div class="faq-answer">
+          <p>Ya mahal lah. Tulisan saya itu membuat jiwa manusia tersentuh berdasarkan teks yang saya tulis atau ketik. Anda tidak akan rugi memilih jasa saya. Kata-kataku, siap memanupulasimu</p>
+      </div>
+  </div>
+
+  <!-- Pertanyaan 2 -->
+  <div class="faq-item">
+      <div class="faq-question" onclick="toggleFAQ(this)">
+          <h3>Udah punya banyak duit dari ratusan karya, kenapa masih kerja freelance?</h3>
+          <span class="toggle-icon">+</span>
+      </div>
+      <div class="faq-answer">
+          <p>Saya memberikan skill dan pengetahuan yang saya milki agar orang-orang mendapatkan sesuatu yang lebih besar ketika saya sudah memberikan dia jasa. Meskipun duit saya sudah banyak, uang yang berasal dari freelance ini saya donasikan untuk orang-orang yang membutuhkan.</p>
+      </div>
+  </div>
+
+  <!-- Pertanyaan 3 -->
+  <div class="faq-item">
+      <div class="faq-question" onclick="toggleFAQ(this)">
+          <h3>Kalo Karya Yang saya inginkan sudah jadi dan saya bayar dengan daun, apakah anda marah?</h3>
+          <span class="toggle-icon">+</span>
+      </div>
+      <div class="faq-answer">
+          <p>Tentu saja saya tidak akan marah dan bahkan saya akan memberikan bonus berupa pembunuh bayaran yang siap memutilasi satu keluarga Anda :)</p>
+      </div>
+  </div>
+</section>
+
+    <section id="contact" class="contact">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <input type="text" placeholder="Nama Anda" required />
+        <input type="email" placeholder="E-Mail Anda" required />
+        <textarea placeholder="Pesan Anda" required></textarea>
+        <button type="submit">Kirim Pesan</button>
+      </form>
+    </section>
+    </div>
+
+
+      <footer>
+        <p>© 2024 Freelance Writer | All rights reserved.</p>
+        <div class="social-media">
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://id.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i>
+              
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
